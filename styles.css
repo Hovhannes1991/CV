@@ -1,0 +1,310 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100vw;
+	background-color: rgb(82, 86, 89);
+}
+
+header {
+	display: none;
+}
+
+main {
+	width: 58%;
+	margin: 80px auto;
+}
+
+@media only screen and (max-width: 1700px) {
+  main {
+    width: 88%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  main {
+    width: 95%;
+  }
+}
+
+
+
+.about {
+	display: flex;
+	width: 100%;	
+	justify-content: space-around;
+	align-items: flex-start;
+	padding: 50px;
+	background-color: #fff;	
+	/*border-bottom: 2px solid rgb(0, 122, 192);	*/
+}
+
+img {
+	width: 200px;
+	margin-bottom: 20px;
+}
+
+h1 {
+	font-size: 3em;
+	color: rgb(0, 122, 192);
+	margin-bottom: 20px;	
+}
+
+.contacts {
+	display: flex;
+	flex-direction: column;    
+}
+
+.contacts > div {
+	display: flex;
+	margin-bottom: 25px;
+}
+
+.contacts_span {	
+	margin-right: 100px;
+	color: #000;
+	font-size: 2em;
+	font-weight: bold;	
+	width: 50px;
+}
+
+.contacts  a, .address {
+	font-size: 2em;	
+	text-decoration: none;
+	color: rgb(11, 157, 232);	
+}
+
+@media only screen and (max-width: 970px) {
+  .contacts > div {
+    flex-direction: column;
+  }  
+}
+
+
+@media only screen and (max-width: 970px) {
+  .about {
+    flex-direction: column;
+  }
+  img {
+	border-radius: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 630px) {
+  img {
+    width: 150px;
+  }
+  h1 {
+  	font-size: 2em;
+  }
+  .contacts_span, .contacts  a, .address {
+  	font-size: 1.5em;
+  }
+}
+
+
+@media only screen and (max-width: 400px) {  
+  h1 {
+  	font-size: 1.5em;
+  }
+  .contacts_span, .contacts  a, .address {
+  	font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 345px) {  
+  .email_container > a {
+  	font-size: 1.1em;  	
+  }
+}
+
+
+/*education*/
+
+.education {
+	display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #fff;
+    padding-left: 10%;
+}
+
+h2 {
+	margin-bottom: 20px;
+}
+
+
+.proffesion, .university, .graduate_year {
+	color: rgb(11, 157, 232);
+	font-size: 1.5em;
+	width: 75%;
+	margin-top: 25px;	
+}
+
+.university {
+	font-weight: bold;
+	color: #000;
+}
+
+.graduate_year {
+	color: grey;
+}
+
+
+
+/*work_experience_and_languages*/
+
+.work_experience_and_languages {
+	display: flex;
+	justify-content: center;
+	background-color: #fff;
+	padding: auto 10%;	
+}
+
+.work_experience, .languages_container {	
+	width: 40%;	
+}
+
+.languages_container {	
+	padding-left: 100px;
+}
+
+.work, .language {
+	color: rgb(11, 157, 232);
+	font-size: 1.5em;
+	margin-top: 50px;
+}
+
+.work_company {
+	color: #000;
+	font-weight: bold;
+}
+
+.work_years {
+	color: grey;
+}
+
+.work > p {
+	margin: 15px auto;
+}
+
+
+.language_level {
+	color: #000;
+}
+
+.language > p {
+	margin: 5px auto;
+}
+
+@media only screen and (max-width: 880px) {
+  .languages_container {	
+	padding-left: 150px;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+  .work_experience_and_languages {	
+	flex-direction: column;
+	align-items: flex-start;
+    }
+
+  .work_experience, .languages_container {	
+	width: 80%;
+	padding: 0 10%;	
+   }  
+}
+
+
+
+/*skills*/
+
+.skills_container {
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	padding: 0 10%;
+}
+
+.skills {    
+    display: flex;
+}
+
+.skills > .column {
+    width: 50%;   
+    display: flex;
+    flex-direction: column;
+}
+
+
+.column > p {	
+	font-size: 2em;
+	color: rgb(11, 157, 232);
+	display: flex;
+	align-items: center;
+	margin: 10px;
+}
+
+
+.column > p::before{
+	content: '\2713';
+	color: #000;
+	margin-right: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .column > p {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 595px) {
+  .skills {
+    flex-direction: column;
+  }
+  .column > p {
+    font-size: 2em;
+  }
+}
+
+
+
+
+
+
+/*for horizontal line*/
+
+.line_container {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	background-color: #fff;
+	padding: 50px 0;
+	height: 30px;
+}
+
+
+
+.line {	
+	background-color: rgb(11, 157, 232);
+	height: 2px;
+	width: 80%;
+	/*min-width: 500px;*/
+	margin: 0 auto;
+}
+
+.hidden_line {
+	display: none;
+}
+
+@media only screen and (max-width: 670px) {
+  .hidden_line {	
+	display: block;
+	margin: 25px auto;
+    }
+}
